@@ -5,7 +5,13 @@
       "id": "scraper-1688",
       "platform": "1688",
       "path": "core/scraper.py",
-      "features": ["GBK编码搜索", "Drawer评价分页", "Ant Design翻页", "刷单过滤", "AI图片识别"],
+      "features": [
+        "GBK编码搜索",
+        "Drawer评价分页",
+        "Ant Design翻页",
+        "刷单过滤",
+        "AI图片识别"
+      ],
       "readme": "programs/1688爬虫.md"
     },
     {
@@ -13,7 +19,13 @@
       "id": "scraper-taobao",
       "platform": "taobao",
       "path": "core/scraper.py",
-      "features": ["滚轮评价加载", "CSS Module选择器", "baxia弹窗检测", "双日期格式解析", "刷单过滤"],
+      "features": [
+        "滚轮评价加载",
+        "CSS Module选择器",
+        "baxia弹窗检测",
+        "双日期格式解析",
+        "刷单过滤"
+      ],
       "readme": "programs/淘宝爬虫.md"
     },
     {
@@ -21,7 +33,12 @@
       "id": "review-extractor",
       "platform": "通用",
       "path": "core/reviews.py",
-      "features": ["淘宝滚轮逐段加载", "1688 Drawer分页", "双平台日期格式", "商家回复剥离"],
+      "features": [
+        "淘宝滚轮逐段加载",
+        "1688 Drawer分页",
+        "双平台日期格式",
+        "商家回复剥离"
+      ],
       "readme": "programs/评价提取器.md"
     },
     {
@@ -29,7 +46,12 @@
       "id": "fake-filter",
       "platform": "通用",
       "path": "core/filter.py",
-      "features": ["t***数字用户名识别", "短内容过滤", "中文字数校验", "重复短句检测"],
+      "features": [
+        "t***数字用户名识别",
+        "短内容过滤",
+        "中文字数校验",
+        "重复短句检测"
+      ],
       "readme": "programs/刷单过滤器.md"
     },
     {
@@ -37,7 +59,13 @@
       "id": "popup-detector",
       "platform": "通用",
       "path": "core/popup.py",
-      "features": ["5维检测", "baxia遮罩", "computedStyle分析", "URL重定向", "iframe验证"],
+      "features": [
+        "5维检测",
+        "baxia遮罩",
+        "computedStyle分析",
+        "URL重定向",
+        "iframe验证"
+      ],
       "readme": "programs/弹窗检测器.md"
     },
     {
@@ -45,7 +73,12 @@
       "id": "ai-vision",
       "platform": "通用",
       "path": "core/ai_vision.py",
-      "features": ["SiliconFlow集成", "Qwen3-VL-8B", "PIL压缩512px", "减少token消耗80%+"],
+      "features": [
+        "SiliconFlow集成",
+        "Qwen3-VL-8B",
+        "PIL压缩512px",
+        "减少token消耗80%+"
+      ],
       "readme": "programs/AI图片识别.md"
     },
     {
@@ -53,7 +86,12 @@
       "id": "config-manager",
       "platform": "通用",
       "path": "core/config.py",
-      "features": ["平台探针", "API密钥管理", "代理配置", "CDP端口自动适配"],
+      "features": [
+        "平台探针",
+        "API密钥管理",
+        "代理配置",
+        "CDP端口自动适配"
+      ],
       "readme": "programs/配置管理器.md"
     },
     {
@@ -61,7 +99,12 @@
       "id": "storage",
       "platform": "通用",
       "path": "database/storage.py",
-      "features": ["4平台分目录", "二级分类自动创建", "JSON格式", "时间戳命名"],
+      "features": [
+        "4平台分目录",
+        "二级分类自动创建",
+        "JSON格式",
+        "时间戳命名"
+      ],
       "readme": "programs/结果存储器.md"
     },
     {
@@ -69,7 +112,11 @@
       "id": "browser-mac",
       "platform": "mac",
       "path": "platforms/mac/browser.py",
-      "features": ["Chrome CDP启动", "killall管理", "临时user-data-dir"],
+      "features": [
+        "Chrome CDP启动",
+        "killall管理",
+        "临时user-data-dir"
+      ],
       "readme": "programs/Mac浏览器管理.md"
     },
     {
@@ -77,8 +124,83 @@
       "id": "browser-win",
       "platform": "windows",
       "path": "platforms/windows/browser.py",
-      "features": ["Chrome CDP启动", "taskkill管理", "Windows路径"],
+      "features": [
+        "Chrome CDP启动",
+        "taskkill管理",
+        "Windows路径"
+      ],
       "readme": "programs/Windows浏览器管理.md"
+    },
+    {
+      "name": "InstHunter",
+      "id": "insthunter",
+      "platform": "Instagram",
+      "path": "/opt/insthunter/",
+      "features": [
+        "网红内容采集",
+        "千问视觉识别",
+        "Apify/instagrapi双引擎",
+        "AI过滤流水线",
+        "时区统一UTC→北京"
+      ],
+      "readme": "programs/insthunter.md",
+      "lessons": "programs/insthunter_弯路.md"
+    },
+    {
+      "name": "RedHunter",
+      "id": "redhunter",
+      "platform": "小红书",
+      "path": "/opt/redhunter/",
+      "features": [
+        "四级关键词池",
+        "风控拟人化",
+        "Chrome守护架构",
+        "弹窗检测",
+        "连续零结果止损"
+      ],
+      "readme": "programs/redhunter.md",
+      "lessons": "programs/redhunter_弯路.md"
+    },
+    {
+      "name": "TickHunter",
+      "id": "tickhunter",
+      "platform": "TikTok",
+      "path": "/opt/tickhunter/",
+      "features": [
+        "架构克隆模式",
+        "TikTok Scraper集成",
+        "三源降级下载",
+        "循环计划调度",
+        "千问封面分析"
+      ],
+      "readme": "programs/tickhunter.md",
+      "lessons": "programs/tickhunter_弯路.md"
+    },
+    {
+      "name": "PhotoStack",
+      "id": "photostack",
+      "platform": "通用",
+      "path": "/opt/photostack/",
+      "features": [
+        "照片管理",
+        "百度网盘同步",
+        "图片分类"
+      ],
+      "readme": "programs/photostack.md"
+    },
+    {
+      "name": "CodeWhale同步系统",
+      "id": "codewhale-sync",
+      "platform": "通用",
+      "path": "~/codewhale/",
+      "features": [
+        "对话实时同步",
+        "L0强制规则",
+        "JSON文件存储",
+        "去重策略",
+        "6位房间代码"
+      ],
+      "readme": "programs/codewhale_sync.md"
     }
   ]
 }
