@@ -1,0 +1,9 @@
+config/api_keys.json
+config/proxy.json
+config/settings.json
+data/
+__pycache__/
+*.pyc
+.DS_Store
+*.log
+/tmp/

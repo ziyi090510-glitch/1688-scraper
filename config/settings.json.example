@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "cdp_port": 9223,
+  "proxy_mode": 1,
+  "max_minutes": 30,
+  "min_reviews": 3,
+  "delay_min": 3,
+  "delay_max": 8,
+  "page_timeout": 180,
+  "output_format": "json",
+  "image_recognition": {
+    "enabled": false,
+    "model": {"name": "Qwen/Qwen3-VL-8B-Instruct", "max_tokens": 100, "temperature": 0.1},
+    "output_tags": ["产品主图","细节图","应用场景","其他"]
+  },
+  "notification": {
+    "enabled": true,
+    "on_start": true,
+    "on_complete": true,
+    "on_popup": true,
+    "progress_interval_minutes": 2
+  }
+}

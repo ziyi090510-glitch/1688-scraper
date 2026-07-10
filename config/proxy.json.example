@@ -1,0 +1,20 @@
+{
+  "_说明": "复制为 proxy.json 并配置",
+  "default": {
+    "type": "tunnel",
+    "host": "127.0.0.1",
+    "port": 1082,
+    "token": "cherryclaw-local-tunnel-2026",
+    "description": "Mac本地隧道 → 30服务器 → 家庭网络"
+  },
+  "nas": {
+    "type": "socks5",
+    "host": "127.0.0.1",
+    "port": 1081,
+    "description": "NAS → 30服务器SSH反向隧道"
+  },
+  "direct": {
+    "type": "direct",
+    "description": "直连（不推荐）"
+  }
+}

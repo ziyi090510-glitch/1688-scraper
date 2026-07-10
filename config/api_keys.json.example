@@ -1,0 +1,15 @@
+{
+  "_说明": "复制此文件为 api_keys.json 并填入真实密钥",
+  "siliconflow": {
+    "api_key": "sk-your-key-here",
+    "base_url": "https://api.siliconflow.cn/v1"
+  },
+  "dashscope": {
+    "api_key": "sk-your-key-here",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  },
+  "bark": {
+    "url": "https://api.day.app/your-device-key",
+    "group": "CherryClaw"
+  }
+}

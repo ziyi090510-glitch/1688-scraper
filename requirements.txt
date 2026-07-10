@@ -1,0 +1,4 @@
+playwright>=1.40
+Pillow>=10.0
+httpx>=0.25
+paramiko>=3.0
